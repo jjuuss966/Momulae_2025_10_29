@@ -10,7 +10,7 @@ from openpyxl import load_workbook
 # ----------------------
 st.set_page_config(page_title="MOMULAE - 강남역 맛집 추천", page_icon="🍱", layout="centered")
 # 엑셀 경로(필요시 수정)
-EXCEL_PATH = r"C:/Users/user/Desktop/스트림릿/강남맛집리스트.xlsx"
+EXCEL_PATH = r"momulae_DB.xlsx"
 IMG_DIR = os.path.dirname(EXCEL_PATH)  # 이미지 파일은 엑셀과 같은 폴더에 둡니다.
 # ----------------------
 # 데이터 로더 (openpyxl)
