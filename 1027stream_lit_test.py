@@ -119,8 +119,8 @@ def page_cat1(db):
             for j, label in enumerate(row_items):
                 with (c1 if j==0 else c2 if j==1 else c3):
                     p = cat_image_path_exact(label)
-                    if p: st.image(p, use_container_width=True)
-                    st.button(label, use_container_width=True,
+                    if p: st.image(p, use_column_width=True)
+                    st.button(label, use_column_width=True,
                               key=f"cat1_{label}", on_click=cb_cat1,
                               kwargs={"label": label, "db": db})
         st.button("이전", type="secondary", on_click=cb_back, kwargs={"to":"home"})
